@@ -87,6 +87,252 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ---------- Base Header - Footer Styles ---------- */
+
+header,
+footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+}
+
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* Footer */
+
+footer {
+
+}
+
+footer .content-wrapper {
+
+}
+
+footer .footer-content {
+
+}
+
+footer .contact {
+
+}
+
+footer address {
+
+}
+
+footer .social {
+
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  align-items: flex-end;
+}
+
+
+/* ---------- Mobile Styles - Homepage ---------- */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+section {
+
+}
+
+article {
+
+}
+
+/* Hero area */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.content-wrapper {
+
+}
+
+/* Aside */
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+aside .content-wrapper {
+
+}
+
+aside .form-description {
+
+}
+
+aside .form {
+
+}
+aside input {
+
+}
+
+/* Features */
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+section .content-wrapper {
+
+}
+
+section .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+section .fontawesome-icon {
+
+}
+
+section article .features-item-description {
+
+}
+
+section article img {
+
+}
+
+/* Reviews */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+/* ---------- Mobile Styles - About Page ---------- */
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.content-wrapper {
+
+}
+
+.map {
+
+}
+
+figure {
+
+}
+
+contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+address {
+
+}
+
+
+/* ---------- Mobile Styles - FAQ Page ---------- */
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq-content {
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +506,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
