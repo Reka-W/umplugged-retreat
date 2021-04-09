@@ -418,6 +418,7 @@ aside .content-wrapper {
   display: flex;
   justify-content: space-between;
   margin: 50px 0;
+  flex-flow: row wrap;
 }
 
 aside .content-wrapper .form-description,
@@ -441,7 +442,7 @@ aside .content-wrapper .form {
 }
 
 .features .features-item-description {
-  width: 50%;
+  width: 62%;
 }
 
 /* Reviews */
@@ -515,13 +516,70 @@ footer .copyright {
     flex-basis: 45%;
 }
 }
+
 /*=============================================================================
 Desktop styles
 ============================================================================= */
 @media only screen and (min-width: 1200px) {
-/*Desktop styles here*/
+
+* {
+  border: 1px solid red;
 }
 
+.content-wrapper {
+     max-width: 960px;
+}
+
+/* ==========================================================================
+ Home Page
+ ========================================================================== */
+
+ /* Hero */
+.hero-area h1 {
+    width: 60%;
+}
+
+/* Aside */
+aside .content-wrapper {
+    justify-content: space-around;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+    width: 27%;
+}
+
+/* Features */
+.features h2 {
+    width: 80%;
+}
+
+.features article {
+    flex-basis:33%;
+}
+
+/* Reviews */
+.reviews article div {
+    width:45%;
+}
+
+/* ==========================================================================
+About Page
+========================================================================== */
+
+.mission h2,
+.contact-section .content-wrapper h2 {
+    width:100%;
+}
+
+/* ==========================================================================
+ FAQ Page
+========================================================================== */
+
+.faq h2 {
+    width: 100%;
+}
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
