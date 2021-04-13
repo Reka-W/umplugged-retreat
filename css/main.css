@@ -89,8 +89,13 @@ textarea {
 
    /* General Styles */
 
+   * {
+       border: 1px solid red;
+   }
+
   html {
         font-size: 16px;
+        color:#e2e3ed;
   }
 
   body {
@@ -109,6 +114,11 @@ textarea {
         text-decoration: none;
    }
 
+   h1 {
+     font-size: 2.25em;
+     font-family:'Poppins', sans-serif;
+   }
+
    h2 {
       font-family: 'Poppins', sans-serif;
       font-size: 1.875em;
@@ -123,6 +133,7 @@ textarea {
    p {
       font-size: 0.875em;
       line-height: 1.125;
+      font-family: 'Open Sans', sans-serif;
    }
 
    img {
@@ -150,6 +161,8 @@ footer {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #202322;
+      text-align: center;
 }
 
 header {
@@ -168,6 +181,7 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
 header nav {
@@ -175,7 +189,10 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%
+  width: 60%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.125em;
 }
 
 header nav ul {
@@ -189,6 +206,7 @@ header nav ul {
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer p {
@@ -220,6 +238,12 @@ footer .copyright {
   margin: 20px 0;
 }
 
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 /* ---------- Mobile Styles - Homepage ---------- */
 
@@ -238,6 +262,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
+  text-align: left;
 }
 
 
@@ -265,8 +291,17 @@ aside {
   flex-flow: row wrap;
 }
 
+.features h2 {
+  text-align: left;
+}
+
+.features-item-description {
+  text-align: center;
+}
+
 .features p {
   margin: 0;
+  line-height: 1.125;
 }
 
 /* Reviews */
@@ -275,15 +310,22 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: #2a423a;
+  text-align: left;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1.875em;
 }
 
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
+}
+
+.reviews p {
+  line-height: 1.125;
 }
 
 /* ==========================================================================
@@ -295,6 +337,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
+}
+
+.mission p {
+  line-height: 1.125;
 }
 
 .contact-section {
@@ -302,6 +349,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #2a423a;
 }
 
 .contact-content p {
@@ -317,13 +365,14 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
 }
 
 .faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   margin: 50px 0 0 0;
 }
 
@@ -331,10 +380,49 @@ aside {
   margin-bottom: 40px;
 }
 
+.faq h4 {
+  line-height: 1.5;
+}
+
+.faq p {
+  line-height: 1.125;
+}
+
 .faq-content {
   margin-bottom: 50px;
 }
 
+/* Form */
+
+.form p {
+  line-height: 1.125;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* ==========================================================================
    Helper classes
@@ -431,9 +519,6 @@ aside {
 Tablet styles
 ============================================================================= */
 
-* {
-    border: 1px solid red;
-}
 .content-wrapper {
   width: 83%;
   max-width: 640px;
@@ -570,66 +655,80 @@ footer .copyright {
 /*=============================================================================
 Desktop styles
 ============================================================================= */
-@media only screen and (min-width: 1200px) {
-
-* {
-  border: 1px solid red;
 }
 
-.content-wrapper {
-     max-width: 960px;
+.reviews article div {
+  width: 49%;
+}
+
+/* Footer */
+
+footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+footer .copyright {
+  width: 100%;
 }
 
 /* ==========================================================================
- Home Page
+ About Page
  ========================================================================== */
 
- /* Hero */
-.hero-area h1 {
-    width: 60%;
+.mission-content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
-/* Aside */
-aside .content-wrapper {
-    justify-content: space-around;
+.mission-content p {
+    width: 45%;
 }
 
-aside .content-wrapper .form-description,
-aside .content-wrapper .form {
-    width: 27%;
+.contact-section .content-wrapper h1 {
+  width: 80%;
 }
 
-/* Features */
-.features h2 {
-    width: 80%;
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.features article {
-    flex-basis:33%;
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+.faq .content-wrapper {
+   justify-content: space-between;
 }
-
-/* Reviews */
-.reviews article div {
-    width:45%;
-}
-
-/* ==========================================================================
-About Page
-========================================================================== */
-
-.mission h2,
-.contact-section .content-wrapper h2 {
-    width:100%;
-}
-
-/* ==========================================================================
- FAQ Page
-========================================================================== */
 
 .faq h2 {
-    width: 100%;
+  width: 100%;
+}
+
+.faq-content {
+    flex-basis: 45%;
 }
 }
+/*=============================================================================
+Desktop styles
+============================================================================= */
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
