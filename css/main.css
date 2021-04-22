@@ -764,9 +764,6 @@ Desktop styles
 /*    .reviews article div {
           width: 49%;
 }*/
-* {
-  border: blue solid 1px;
-}
 
 .content-wrapper {
   width: 80%;
@@ -834,25 +831,13 @@ footer .copyright {
  About Page
  ========================================================================== */
 
-.mission-content {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
+ .information, .chat {
+   width: 45%;
+ }
 
-.mission-content p {
-    width: 45%;
-}
-
-.contact-section .content-wrapper h1 {
-  width: 80%;
-}
-
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+ .contact-section h2 {
+   margin: 0;
+ }
 
   /* ==========================================================================
    FAQ Page
@@ -866,9 +851,7 @@ footer .copyright {
   width: 100%;
 }
 
-.faq-content {
-    flex-basis: 45%;
-}
+
 }
 
 
