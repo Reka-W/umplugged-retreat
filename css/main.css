@@ -224,7 +224,6 @@ footer p {
 }
 
 footer .content-wrapper {
-  width: 55%;
   margin: 50px 0;
 }
 
@@ -234,7 +233,7 @@ footer .contact {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -242,6 +241,11 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer i {
+	font-size: 2.5em;
+  color: #527158;
 }
 
 footer .copyright {
@@ -255,6 +259,9 @@ footer .copyright {
   flex-direction: column;
 }
 
+.social {
+  width: 63%;
+}
 /* ---------- Mobile Styles - Homepage ---------- */
 
 /* Hero area */
@@ -332,6 +339,10 @@ input[type=button] {
 .features article {
   width: 63%;
   margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 .features .features-items {
@@ -343,6 +354,11 @@ input[type=button] {
 
 .features h2 {
   text-align: left;
+}
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features-item-description {
@@ -402,12 +418,28 @@ input[type=button] {
   line-height: 1.125;
 }
 
+.map-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow-x: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   background: #2a423a;
+  padding-bottom: 30px;
 }
 
 .contact-content p {
@@ -635,9 +667,8 @@ aside h3 {
   line-height: 2;
 }
 
-.features .fontawesome-icon {
-  width: 50px;
-  height: 50px;
+.features i {
+  margin-bottom: 30px;
 }
 
 .features .features-item-description {
@@ -691,6 +722,10 @@ footer .contact {
   width: 45%
 }
 
+footer .social-icons {
+  justify-content: space-around;
+}
+
 footer .social {
   width: 45%;
 }
@@ -730,7 +765,11 @@ footer .copyright {
 }
 
 .contact-section  h2 {
-  line-height: 3;
+  line-height: 1.6;
+}
+
+.contact-content h4 {
+  margin: 5px 0 15px 0;
 }
 
   /* ==========================================================================
@@ -740,6 +779,7 @@ footer .copyright {
 .faq .content-wrapper {
    justify-content: space-between;
    flex-flow: row wrap;
+   align-items: flex-start;
 }
 
 .faq h2 {
@@ -796,8 +836,12 @@ aside p {
   width: 90%;
 }
 
-article .features {
-  width: 33%;
+.features article {
+  flex-basis: 33%;
+}
+
+.features i {
+  margin-bottom: 20px;
 }
 
 /* Reviews Section */
